@@ -1,16 +1,25 @@
 {
-  "name": "eslint-config-xo",
-  "version": "0.15.2",
-  "description": "ESLint shareable config for XO",
-  "license": "MIT",
-  "repository": "sindresorhus/eslint-config-xo",
+  "name": "eslint-config-qx",
+  "version": "0.0.1",
+  "description": "ESLint shareable config for Qooxdoo",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/drawstack/eslint-config-qx/blob/master/LICENSE"
+    }
+  ],
+  "homepage": "https://github.com/drawstack/eslint-config-qx",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/drawstack/eslint-config-qx.git"
+  },
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "Qooxdoo Developers",
+    "email": "info@qooxdoo.org",
+    "url": "http://www.qooxdoo.org/"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=4.5"
   },
   "scripts": {
     "test": "ava"
@@ -21,40 +30,18 @@
     "browser.js"
   ],
   "keywords": [
-    "❤️",
     "eslintconfig",
-    "xo",
-    "xoxo",
-    "hugs",
-    "kisses",
-    "happy",
-    "happiness",
-    "code",
-    "quality",
-    "style",
-    "lint",
-    "linter",
-    "jscs",
-    "jshint",
-    "jslint",
-    "eslint",
-    "validate",
-    "code style",
-    "standard",
-    "strict",
-    "check",
-    "checker",
-    "verify",
-    "enforce",
-    "hint",
-    "simple"
+    "qooxdoo"
   ],
+  "dependencies": {
+    "eslint-plugin-qx-rules": "^0.0.1"
+  },
   "devDependencies": {
     "ava": "*",
-    "babel-eslint": "^6.0.0",
+    "babel-eslint": "^6.1.2",
     "eslint": "^3.4.0",
-    "eslint-plugin-babel": "^3.0.0",
-    "is-plain-obj": "^1.0.0",
+    "eslint-plugin-babel": "^3.3.0",
+    "is-plain-obj": "^1.1.0",
     "temp-write": "^2.1.0"
   },
   "peerDependencies": {

@@ -9,11 +9,23 @@ module.exports = {
 			experimentalObjectRestSpread: true
 		}
 	},
+	globals: {
+    "q": false,
+    "qx": false,
+    "qxWeb": false
+	},
 	env: {
 		node: true,
 		es6: true
 	},
+	plugins: [
+		'qx-rules'
+	],
 	rules: {
+		// Qx-rules plugin
+		'qx-rules/no-refs-in-members': 'error',
+    'qx-rules/no-illegal-private-usage': 'error',
+
 		'comma-dangle': ['error', 'never'],
 		'no-cond-assign': 'error',
 		'no-constant-condition': 'error',
@@ -52,9 +64,9 @@ module.exports = {
 		'complexity': 'warn',
 		'curly': 'error',
 		'default-case': 'error',
-		'dot-notation': 'error',
+		'dot-notation': 0,
 		'dot-location': ['error', 'property'],
-		'eqeqeq': 'error',
+		'eqeqeq': 0,
 		'guard-for-in': 'error',
 		'no-alert': 'error',
 		'no-caller': 'error',
@@ -76,7 +88,7 @@ module.exports = {
 		'no-iterator': 'error',
 		'no-labels': 'error',
 		'no-lone-blocks': 'error',
-		'no-loop-func': 'error',
+		'no-loop-func': 0,
 		'no-multi-spaces': 'error',
 		'no-multi-str': 'error',
 		'no-new-func': 'error',
@@ -86,14 +98,14 @@ module.exports = {
 		'no-octal': 'error',
 		'no-proto': 'error',
 		'no-redeclare': 'error',
-		'no-return-assign': ['error', 'always'],
+		'no-return-assign': 0,
 		'no-script-url': 'error',
 		'no-self-assign': ['error', {props: true}],
 		'no-self-compare': 'error',
 		'no-sequences': 'error',
 		'no-throw-literal': 'error',
 		'no-unmodified-loop-condition': 'error',
-		'no-unused-expressions': 'error',
+		'no-unused-expressions': 0,
 		'no-unused-labels': 'error',
 		'no-useless-call': 'error',
 		'no-useless-concat': 'error',
@@ -141,14 +153,11 @@ module.exports = {
 		'eol-last': 'error',
 		'func-call-spacing': ['error', 'never'],
 		'func-names': ['error', 'never'],
-		'indent': ['error', 'tab', {
+		'indent': ['error', 2, {
 			SwitchCase: 1
 		}],
 		'jsx-quotes': 'error',
-		'key-spacing': ['error', {
-			beforeColon: false,
-			afterColon: true
-		}],
+		'key-spacing': 0,
 		'keyword-spacing': 'error',
 		'linebreak-style': ['error', 'unix'],
 		'max-depth': 'warn',
@@ -185,7 +194,7 @@ module.exports = {
 		'operator-linebreak': ['error', 'after'],
 		'padded-blocks': ['error', 'never'],
 		'quote-props': ['error', 'consistent-as-needed'],
-		'quotes': ['error', 'single', {
+		'quotes': ['error', 'double', {
 			allowTemplateLiterals: true
 		}],
 		'semi-spacing': ['error', {
@@ -195,11 +204,11 @@ module.exports = {
 		'semi': ['error', 'always'],
 		'space-before-blocks': ['error', 'always'],
 		'space-before-function-paren': ['error', {
-			anonymous: 'always',
+			anonymous: 'never',
 			named: 'never'
 		}],
 		'space-in-parens': ['error', 'never'],
-		'space-infix-ops': 'error',
+		'space-infix-ops': 0,
 		'space-unary-ops': 'error',
 		'spaced-comment': ['error', 'always', {
 			line: {

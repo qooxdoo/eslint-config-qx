@@ -18,7 +18,7 @@ test('main', t => {
 	t.true(isPlainObj(conf));
 	t.true(isPlainObj(conf.rules));
 
-	const errors = runEslint('\'use strict\';\nconsole.log("unicorn")\n', conf);
+	const errors = runEslint('\"use strict\";\nconsole.log(\'unicorn\')\n', conf);
 	t.is(errors[0].ruleId, 'quotes');
 });
 
@@ -47,6 +47,6 @@ test('browser', t => {
 
 	t.true(isPlainObj(conf));
 
-	const errors = runEslint('\'use strict\';\nprocess.exit();\n', conf);
+	const errors = runEslint('\"use strict\";\nprocess.exit();\n', conf);
 	t.is(errors[0].ruleId, 'no-undef');
 });

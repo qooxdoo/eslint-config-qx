@@ -6,6 +6,8 @@ module.exports = {
 	parser: 'babel-eslint',
 	plugins: ['babel'],
 	rules: {
+		'indent': ['error', 2, {SwitchCase: 1}],
+
 		'no-var': 'error',
 		'prefer-arrow-callback': 'error',
 		'prefer-const': ['error', {
