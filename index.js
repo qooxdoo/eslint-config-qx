@@ -60,7 +60,7 @@ module.exports = {
 		'no-unexpected-multiline': 'error',
 		'accessor-pairs': 'error',
 		'array-callback-return': 'error',
-		'block-scoped-var': 'error',
+		'block-scoped-var': 'off',
 		'complexity': 'warn',
 		'curly': 'error',
 		'default-case': 'error',
@@ -109,7 +109,7 @@ module.exports = {
 		'no-unused-labels': 'error',
 		'no-useless-call': 'error',
 		'no-useless-concat': 'error',
-		'no-useless-escape': 'error',
+		'no-useless-escape': 'off',
 		'no-void': 'error',
 		'no-warning-comments': 'warn',
 		'no-with': 'error',
@@ -175,7 +175,7 @@ module.exports = {
 		'no-lonely-if': 'error',
 		'no-mixed-operators': 'error',
 		'no-mixed-spaces-and-tabs': 'error',
-		'no-multiple-empty-lines': ['error', {
+		'no-multiple-empty-lines': ['off', {
 			max: 1
 		}],
 		'no-nested-ternary': 'warn',
