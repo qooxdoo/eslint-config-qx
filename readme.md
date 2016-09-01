@@ -59,6 +59,14 @@ And [`qx/browser`](browser.js) if you're in the browser:
 }
 ```
 
+If you want only check for safety-errors then extend [qx/safety](safety.js):
+
+```json
+{
+	"extends": "qx/safety"
+}
+```
+
 
 ## Authors
 

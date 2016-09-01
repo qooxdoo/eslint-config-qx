@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-qx",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ESLint shareable config for Qooxdoo",
   "licenses": [
     {
@@ -27,24 +27,22 @@
   "files": [
     "index.js",
     "esnext.js",
-    "browser.js"
+    "browser.js",
+    "safety.js"
   ],
   "keywords": [
     "eslintconfig",
     "qooxdoo"
   ],
   "dependencies": {
+    "eslint": "^3.4.0",
     "eslint-plugin-qx-rules": "^0.0.1"
   },
   "devDependencies": {
     "ava": "*",
     "babel-eslint": "^6.1.2",
-    "eslint": "^3.4.0",
     "eslint-plugin-babel": "^3.3.0",
     "is-plain-obj": "^1.1.0",
     "temp-write": "^2.1.0"
-  },
-  "peerDependencies": {
-    "eslint": ">=3.4.0"
   }
 }
