@@ -24,7 +24,7 @@ module.exports = {
 			max: 7
 		}],
 		'no-mixed-spaces-and-tabs': 'off', // 177
-    'no-trailing-spaces': 'off', // 186
+		'no-trailing-spaces': 'off', // 186
     'object-curly-spacing': 'off', // 188
     'one-var-declaration-per-line': 'off', // 192
     'padded-blocks': 'off', // 195
