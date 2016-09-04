@@ -162,6 +162,9 @@ module.exports = {
 		'keyword-spacing': 'error',
 		'linebreak-style': ['error', 'unix'],
 		'max-depth': 'warn',
+		'max-lines': ['warn', {
+			max: 700
+		},
 		'max-nested-callbacks': ['warn', 4],
 		'max-params': ['warn', {
 			max: 4
