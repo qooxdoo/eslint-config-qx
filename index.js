@@ -163,7 +163,7 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'],
 		'max-depth': 'warn',
 		'max-lines': ['warn', {
-			max: 700
+			max: 1024
 		}],
 		'max-nested-callbacks': ['warn', 4],
 		'max-params': ['warn', {
