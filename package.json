@@ -5,13 +5,13 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/drawstack/eslint-config-qx/blob/master/LICENSE"
+      "url": "https://github.com/qooxdoo/eslint-config-qx/blob/master/LICENSE"
     }
   ],
-  "homepage": "https://github.com/drawstack/eslint-config-qx",
+  "homepage": "https://github.com/qooxdoo/eslint-config-qx",
   "repository": {
     "type": "git",
-    "url": "git://github.com/drawstack/eslint-config-qx.git"
+    "url": "git://github.com/qooxdoo/eslint-config-qx.git"
   },
   "author": {
     "name": "Qooxdoo Developers",
