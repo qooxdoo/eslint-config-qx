@@ -2,18 +2,26 @@
 
 module.exports = {
     env: {
-        es6: true, node: true
-    }, globals: {
+       es6: true, 
+	   node: true
+    }, 
+	globals: {
         'q': false,
         'qx': false,
         'qxWeb': false
-    }, parserOptions: {
+    }, 
+	parserOptions: {
         ecmaFeatures: {
-            experimentalObjectRestSpread: true, jsx: true
-        }, ecmaVersion: 2016, sourceType: 'module'
-    }, plugins: [
+            experimentalObjectRestSpread: true, 
+			jsx: true
+        }, 
+		ecmaVersion: 2016, 
+		sourceType: 'module'
+    }, 
+	plugins: [
         'qx-rules'
-    ], rules: {
+    ], 
+	rules: {
 		// Special qooxdoo stuff
 		'qx-rules/no-illegal-private-usage': 'error',
 		'qx-rules/no-refs-in-members': 'error', 
@@ -206,7 +214,8 @@ module.exports = {
 		'rest-spread-spacing': ['error', 'never'], 
 		'semi': ['error', 'always'],
 		'semi-spacing': ['error', {
-            after: true, before: false
+            after: true, 
+			before: false
         }], 
 		'space-before-blocks': ['error', 'always'],
 		'space-before-function-paren': ['error', {
@@ -218,7 +227,8 @@ module.exports = {
 		'space-unary-ops': 'error',
 		'spaced-comment': ['error', 'always', {
             block: {
-                balanced: true, markers: ['!']
+                balanced: true, 
+				markers: ['!']
             }, line: {
                 exceptions: ['-']
             }
