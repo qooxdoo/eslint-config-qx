@@ -35,7 +35,7 @@
     "qooxdoo"
   ],
   "dependencies": {
-    "eslint": "^3.4.0",
+    "eslint": "^3.19.0",
     "eslint-plugin-qx-rules": "^0.0.2"
   },
   "devDependencies": {
