@@ -267,7 +267,6 @@ module.exports = {
 	        }],
         'strict': 'off',
         'switch-colon-spacing': 'error',
-	
 		'symbol-description': 'error', 
 		'template-curly-spacing': 'error', 
         'template-tag-spacing': "error",
