@@ -9,30 +9,29 @@ module.exports = {
     es6: false
 	},
   rules: {
-    // The comments here are the line numbers in index.js
-    'no-extra-semi': 'off', // 45
+    'no-extra-semi': 'off',
     'curly': 'off',
-    'no-multi-spaces': 'off', // 92
-    'array-bracket-spacing': 'off', // 140
-    'brace-style': 'off', // 141
-    'camelcase': 'off', // 144
-    'comma-spacing': 'off', // 147
-    'indent': 'off', // 156
-    'keyword-spacing': 'off', // 161
-    'linebreak-style': 'off', // 162
-    'max-params': ['warn', { // 165
+    'no-multi-spaces': 'off', 
+    'array-bracket-spacing': 'off', 
+    'brace-style': 'off', 
+    'camelcase': 'off', 
+    'comma-spacing': 'off',
+    'indent': 'off', 
+    'keyword-spacing': 'off', 
+    'linebreak-style': 'off', 
+    'max-params': ['warn', { 
 			max: 7
 		}],
-		'no-mixed-spaces-and-tabs': 'off', // 177
-		'no-trailing-spaces': 'off', // 186
-    'object-curly-spacing': 'off', // 188
-    'one-var-declaration-per-line': 'off', // 192
-    'padded-blocks': 'off', // 195
-    'quote-props': 'off', // 196
-    'quotes': 'off', // 197
-    'space-before-blocks': 'off', // 205
-    'space-before-function-paren': 'off', // 206
-    'space-in-parens': 'off', // 210
-    'spaced-comment': 'off' // 213
+		'no-mixed-spaces-and-tabs': 'off', 
+		'no-trailing-spaces': 'off', 
+    'object-curly-spacing': 'off', 
+    'one-var-declaration-per-line': 'off', 
+    'padded-blocks': 'off', 
+    'quote-props': 'off', 
+    'quotes': 'off', 
+    'space-before-blocks': 'off', 
+    'space-before-function-paren': 'off', 
+    'space-in-parens': 'off', 
+    'spaced-comment': 'off'
   }
 };
