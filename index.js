@@ -55,7 +55,7 @@ module.exports = {
 	            after: true, before: false
         	}], 
 		'comma-style': ['error', 'last'], 
-		'complexity': 'warn', 
+		'complexity': 'off', 
 		'computed-property-spacing': ['error', 'never'], 
 		'constructor-super': 'error', 
         'consistent-return': 'error',
@@ -71,7 +71,7 @@ module.exports = {
         'func-names': 'off',
         'func-style': 'off',
 		'generator-star-spacing': ['error', 'both'], 
-		'guard-for-in': 'error', 
+		'guard-for-in': 'off', 
 		'handle-callback-err': 'warn', 
         'id-blacklist': 'error',                  // missing blacklist
         'id-length': 'off',
@@ -87,15 +87,11 @@ module.exports = {
 		'linebreak-style': ['error', 'unix'], 
         'lines-around-comment': 'off',
         'lines-around-directive': 'off',
-		'max-depth': 'warn', 
+		'max-depth': 'off', 
         'max-len': 'off',
-		'max-lines': ['warn', {
-	            max: 1024
-        	}], 
-		'max-nested-callbacks': ['warn', 6], 
-		'max-params': ['warn', {
-            max: 6
-        }], 
+		'max-lines': 'off',
+		'max-nested-callbacks': 'error', 
+		'max-params': 'off',
         'max-statements': 'off',
 		'max-statements-per-line': 'error', 
         'multiline-ternary': 'off',
@@ -152,8 +148,8 @@ module.exports = {
 		'no-implicit-globals': 'error', 
 		'no-implied-eval': 'error', 
         'no-inline-comments': 'off',
-        'no-invalid-this': 'error',
-	
+        // disabled because qooxdoo allows this in listener
+		'no-invalid-this': 'off',
 		'no-inner-declarations': 'error', 
 		'no-invalid-regexp': 'error', 
 		'no-irregular-whitespace': 'error', 
