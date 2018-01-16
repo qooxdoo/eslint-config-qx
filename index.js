@@ -44,9 +44,7 @@ module.exports = {
 		// disabled because of https://github.com/eslint/eslint/issues/3420
         'callback-return': 'off',
 		
-		'camelcase': ['error', {
-	            properties: 'always'
-        	}], 
+		'camelcase': 'off',
         'capitalized-comments': 'off',
         'class-methods-use-this': 'error',
 	
@@ -160,13 +158,13 @@ module.exports = {
 		'no-lonely-if': 'error', 
 		'no-loop-func': 0, 
         'no-magic-numbers': 'off',
-		'no-mixed-operators': 'error', 
+		'no-mixed-operators': 'off', 
 		'no-mixed-requires': ['error', {
 	            allowCall: true, grouping: true
         	}], 
 		'no-mixed-spaces-and-tabs': 'error', 
 		'no-multi-spaces': 'error', 
-		'no-multi-str': 'error', 
+		'no-multi-str': 'off', 
 		'no-multiple-empty-lines': ['off', {
             max: 1
         }], 
@@ -233,7 +231,9 @@ module.exports = {
 		'operator-linebreak': ['error', 'after'], 
 		'object-property-newline': 'error',
 		'padded-blocks': ['error', 'never'], 
-		'quote-props': ['error', 'consistent-as-needed'],
+		// of because generaty.py do not allow missing quote for events
+		//'quote-props': ['error', 'consistent-as-needed'],
+		'quote-props': 'off',
 		'quotes': ['error', 'double', {
             allowTemplateLiterals: true
         }], 
