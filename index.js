@@ -239,7 +239,7 @@ module.exports = {
 		'quotes': ['error', 'double', {
             allowTemplateLiterals: true
         }], 
-		'radix': 'error', 
+		'radix': 'off', 
 		'require-yield': 'error', 
 		'rest-spread-spacing': ['error', 'never'], 
 		'semi': ['error', 'always'],
