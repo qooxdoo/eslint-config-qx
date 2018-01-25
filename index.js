@@ -23,7 +23,8 @@ module.exports = {
     ], 
 	rules: {
 		// Special qooxdoo stuff
-		'qx-rules/no-illegal-private-usage': 'error',
+		//	to slow	
+        'qx-rules/no-illegal-private-usage': 'off',
 		'qx-rules/no-refs-in-members': 'error', 
 		
         'accessor-pairs': 'error', 
@@ -184,11 +185,12 @@ module.exports = {
 		'no-prototype-builtins': 'error',
 		'no-redeclare': 'error', 
 		'no-regex-spaces': 'error', 
-		'no-restricted-globals': ['error', 'event'],
-		'no-restricted-imports': ['error', 'domain', 'freelist', 'smalloc', 'sys', 'colors'],
-		'no-restricted-modules': ['error', 'domain', 'freelist', 'smalloc', 'sys', 'colors'],
+        "no-restricted-globals": "error",
+        "no-restricted-imports": "error",
+        "no-restricted-modules": "error",
+        "no-restricted-properties": "error",
 		'no-restricted-syntax': ['error', 'WithStatement'], 
-		'no-return-assign': 0, 
+		'no-return-assign': 'off', 
 		'no-script-url': 'error', 
 		'no-self-assign': ['error', {props: true}], 
 		'no-self-compare': 'error', 
