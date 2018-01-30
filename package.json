@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-qx",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "description": "ESLint shareable config for Qooxdoo",
   "licenses": [
     {
@@ -36,7 +36,7 @@
   ],
   "dependencies": {
     "eslint": "^3.19.0",
-    "eslint-plugin-qx-rules": "^0.0.2"
+    "eslint-plugin-qx-rules": "^0.1.0"
   },
   "devDependencies": {
     "ava": "*",
