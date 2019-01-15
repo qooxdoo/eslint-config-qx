@@ -98,7 +98,7 @@ $ npm run eslint -- --fix .
 
 ### Handling globals
 
-Normaly your app has its own globals, like `qxc` for Qooxdoo Contribs,
+Normaly your app has its own globals, like `qxl` for Qooxdoo Contribs,
 for that you need to extend `qx/browser` with your own config.
 
 Create a file `.eslintrc-qx`:
@@ -106,12 +106,12 @@ Create a file `.eslintrc-qx`:
 ```json
 {
   "globals": {
-    "qxc": false
+    "qxl": false
   }
 }
 ```
 
-This file tells eslint to ignore `qxc` but don't allow writes to it.
+This file tells eslint to ignore `qxl` but don't allow writes to it.
 
 Now you need to tell eslint about it in `package.json`:
 

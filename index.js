@@ -169,10 +169,7 @@ module.exports = {
 		'no-multiple-empty-lines': ['off', {
             max: 1
         }], 
-		'no-negated-condition': 'error', 
-		'no-nested-ternary': 'warn', 
 		'no-new': 'error', 
-		'no-new-func': 'error', 
 		'no-new-object': 'error', 
 		'no-new-require': 'error', 
 		'no-new-symbol': 'error',
@@ -195,7 +192,6 @@ module.exports = {
 		'no-self-assign': ['error', {props: true}], 
 		'no-self-compare': 'error', 
 		'no-sequences': 'error',
-		'no-shadow': 'error', 
 		'no-shadow-restricted-names': 'error', 
 		'no-sparse-arrays': 'error',
 		'no-template-curly-in-string': 'error',
@@ -215,7 +211,6 @@ module.exports = {
 		'no-unused-expressions': 0, 
 		'no-unused-labels': 'error', 
 		'no-unused-vars': ['error', {'vars':'all', 'args':'none', 'caughtErrors':'none'}], 
-		'no-use-before-define': ['error', 'nofunc'],
 		'no-useless-call': 'error', 
 		'no-useless-computed-key': 'error', 
 		'no-useless-concat': 'error', 
