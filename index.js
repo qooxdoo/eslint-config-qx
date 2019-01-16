@@ -51,6 +51,31 @@ module.exports = {
          * Super-strict on spacing in object literals. Does not fit in many use
          * cases. Very subjective and often has little effect on readbility
          */
+        
+        /*
+         * "space-before-function-paren": ["error", {
+         *      anonymous: "never",
+         *      named: "never"
+         * }],
+         * 
+         * Super strict about placing of spaces before parentheses. Very subjective 
+         * and has little effect on readbility
+         */
+        
+        /*
+         *   "spaced-comment": ["error", "always", {
+         *       block: {
+         *           balanced: true,
+         *           markers: ["!"]
+         *       },
+         *       line: {
+         *           exceptions: ["-"]
+         *       }
+         *   }],
+         *   
+         * Forces a space before the closing of a comment.  Very subjective 
+         * and has little effect on readbility, no benefit.
+         */
 
         /* 
          * Questionable, especially for simple statements, but `curly` allows backwards 
@@ -333,22 +358,9 @@ module.exports = {
             before: false
         }],
         "space-before-blocks": ["error", "always"],
-        "space-before-function-paren": ["error", {
-            anonymous: "never",
-            named: "never"
-        }],
         "space-in-parens": ["error", "never"],
         "space-infix-ops": 0,
         "space-unary-ops": "error",
-        "spaced-comment": ["error", "always", {
-            block: {
-                balanced: true,
-                markers: ["!"]
-            },
-            line: {
-                exceptions: ["-"]
-            }
-        }],
         "strict": "off",
         "switch-colon-spacing": "error",
         "symbol-description": "error",
