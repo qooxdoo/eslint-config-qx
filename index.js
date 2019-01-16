@@ -67,13 +67,6 @@ module.exports = {
          */
         
         /*
-         * "no-nested-ternary": "warn",
-         * 
-         * Rejects really common code, EG sort routines often use `return a < b ? -1 :
-         * a > b ? 1 : 0`
-         */
-        
-        /*
          * "no-trailing-spaces": "error"
          * 
          * Difficult to control because different editors routinely handle this
@@ -81,7 +74,40 @@ module.exports = {
          * readbility
          */
         
+        /*
+         * "no-nested-ternary": "warn",
+         * 
+         * Rejects really common code, EG sort routines often use `return a < b ? -1 :
+         * a > b ? 1 : 0`
+         */
         
+        /*
+         * 'no-negated-condition': 'error', 
+         * 
+         * Rejects `if (!expr) {} else {}` in favour of `if (expr) {} else {}`.  Does not
+         * necessarily improve readability and provides no code safety.
+         */
+        
+        /*
+         * 'no-shadow': 'error', 
+         * 
+         * Prevents very common use cases such as nested functions with callbacks
+         * from using the same parameter name, eg `cb`.  This causes the user to
+         * make meaningless name changes and makes it harder to refactor code.
+         */
+        
+        /*
+         * "no-new-func": "error",
+         * 
+         * Prevents using `new Function("...code...")` which is the whole purpose of
+         * using `new Function()`!
+         */
+
+        /*
+         * 'no-use-before-define': ['error', 'nofunc'],
+         * 
+         * Debatable, but prevents hoisting which is a valuable and valid tavascrfipt tool
+         */
         
         "accessor-pairs": "error",
         "array-bracket-newline": "off",
@@ -229,7 +255,6 @@ module.exports = {
         }],
 
         "no-new": "error",
-        "no-new-func": "error",
         "no-new-object": "error",
         "no-new-require": "error",
         "no-new-symbol": "error",
