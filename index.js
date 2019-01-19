@@ -131,8 +131,17 @@ module.exports = {
          * 
          * Debatable, but prevents hoisting which is a valuable and valid tavascrfipt tool
          */
-        
-        "accessor-pairs": "error",
+
+        /*
+         * "no-confusing-arrow": "error",
+         *
+         * data => (data === "false" ? "" : data) looks much nicer than
+         * data => {
+         *   return (data === "false" ? "" : data)
+         * }
+         */
+
+		 "accessor-pairs": "error",
         "array-bracket-newline": "off",
 
         "array-callback-return": "error",
@@ -211,7 +220,6 @@ module.exports = {
         "no-case-declarations": "error",
         "no-class-assign": "error",
         "no-cond-assign": "error",
-        "no-confusing-arrow": "error",
         "no-console": "off",
         "no-continue": "off",
         "no-const-assign": "error",
