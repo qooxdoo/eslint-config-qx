@@ -84,10 +84,12 @@ module.exports = {
         "curly": "error",
 
         /*
-         * Default to qooxdoo pretty
+         * "indent": ["error", 2, { SwitchCase: 1 }],
+         * 
+         * Enforces a very specific level of indenting, which can be difficult to control 
+         * between editors.
          * 
          */
-        "indent": ["error", 2, { SwitchCase: 1 }],
         
         /*
          * "no-trailing-spaces": "error"
