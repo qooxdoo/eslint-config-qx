@@ -215,7 +215,10 @@ module.exports = {
             newIsCap: true
         }],
         "new-parens": "error",
-        "newline-per-chained-call": "error",
+	/*
+	 * "newline-per-chained-call": "error",
+	 * Does not make sense as a general rule, decreases readability for short chained calls
+	 */
         "no-alert": "error",
         "no-array-constructor": "error",
         "no-caller": "error",
