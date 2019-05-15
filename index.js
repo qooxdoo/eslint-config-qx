@@ -22,8 +22,8 @@ module.exports = {
     rules: {
         // Special qooxdoo stuff
         // to slow
-        "qx-rules/no-illegal-private-usage": "off",
-        "qx-rules/no-refs-in-members": "error",
+        "@qooxdoo/qx/no-illegal-private-usage": "off",
+        "@qooxdoo/qx/no-refs-in-members": "error",
 
         /*
          * "array-bracket-spacing": ["error", "never"],
