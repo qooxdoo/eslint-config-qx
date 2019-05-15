@@ -17,7 +17,7 @@ module.exports = {
         sourceType: "module"
     },
     plugins: [
-        "qx-rules"
+        "@qooxdoo/qx"
     ],
     rules: {
         // Special qooxdoo stuff

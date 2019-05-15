@@ -1,6 +1,6 @@
 {
-  "name": "@qooxdoo/eslint-qx-rules",
-  "version": "1.0.2",
+  "name": "@qooxdoo/eslint-config-qx",
+  "version": "1.0.0",
   "description": "ESLint shareable config for Qooxdoo",
   "license": "MIT",
   "homepage": "https://github.com/qooxdoo/eslint-qx-rules",
@@ -31,7 +31,7 @@
   ],
   "dependencies": {
     "eslint": "^3.19.0",
-    "@qooxdoo/eslint-qx-plugins": "^1.0.0"
+    "@qooxdoo/eslint-plugin-qx": "^1.0.0"
   },
   "devDependencies": {
     "ava": "*",

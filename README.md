@@ -2,13 +2,13 @@
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for [Qooxdoo](http://www.qooxdoo.org)
 
-This depends on [eslint-plugins-qx-rules](https://github.com/drawstack/eslint-plugins-qx-rules)
+This depends on [@qooxdoo/eslint-plugins-qx](https://github.com/qooxdoo/eslint-qx-plugins)
 
 
 ## Install
 
 ```
-$ npm install --save-dev eslint-config-qx
+$ npm install --save-dev @qooxdoo/eslint-config-qx
 ```
 
 For the `esnext` version you'll also need Babel's ESLint [parser](https://github.com/babel/babel-eslint) and [plugin](https://github.com/babel/eslint-plugin-babel):
@@ -36,7 +36,7 @@ Create a new file `package.json` with the following contents in your project:
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "eslint-config-qx": "^0.0.7"
+    "@qooxdoo/eslint-config-qx": "^0.0.7"
   },
   "engine": "node >= 4.5",
   "eslintConfig": {
@@ -60,11 +60,11 @@ Add these lines to it:
 ```json
 {
 	"devDependencies": {
-		"eslint-config-qx": "^0.0.7"
+		"@qooxdoo/eslint-config-qx": "^0.0.7"
 	},
 	"eslintConfig": {
 		"extends": [
-			"qx/browser"
+			"@qooxdoo/eslint-config-qx/browser"
 		]
 	},
 	"scripts": {
@@ -99,7 +99,7 @@ $ npm run eslint -- --fix .
 ### Handling globals
 
 Normaly your app has its own globals, like `qxl` for Qooxdoo Contribs,
-for that you need to extend `qx/browser` with your own config.
+for that you need to extend `@qooxdoo/eslint-config-qx/browser` with your own config.
 
 Create a file `.eslintrc-qx`:
 
@@ -119,7 +119,7 @@ Now you need to tell eslint about it in `package.json`:
 {
 	"eslintConfig": {
 		"extends": [
-			"qx/browser",
+			"@qooxdoo/eslint-config-qx/browser"
 			".eslintrc-qx"
 		]
 	}
@@ -157,7 +157,7 @@ This package also exposes [`qx/esnext`](esnext.js) if you want ES2015+ rules:
 
 ```json
 {
-	"extends": "qx/esnext"
+	"extends": "@qooxdoo/eslint-plugins-qx/esnext"
 }
 ```
 
@@ -165,7 +165,7 @@ And [`qx/browser`](browser.js) if you're in the browser:
 
 ```json
 {
-	"extends": "qx/browser"
+	"extends": "@qooxdoo/eslint-config-qx/browser"
 }
 ```
 
@@ -173,7 +173,7 @@ If you want only check for safety-errors then extend [qx/safety](safety.js):
 
 ```json
 {
-	"extends": "qx/safety"
+	"extends": "@qooxdoo/eslint-config-qx/safety"
 }
 ```
 
