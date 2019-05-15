@@ -1,17 +1,12 @@
 {
-  "name": "eslint-config-qx",
-  "version": "0.2.6",
+  "name": "@qooxdoo/eslint-qx-rules",
+  "version": "1.0.0",
   "description": "ESLint shareable config for Qooxdoo",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/qooxdoo/eslint-config-qx/blob/master/LICENSE"
-    }
-  ],
-  "homepage": "https://github.com/qooxdoo/eslint-config-qx",
+  "license": "MIT",
+  "homepage": "https://github.com/qooxdoo/eslint-qx-rules",
   "repository": {
     "type": "git",
-    "url": "git://github.com/qooxdoo/eslint-config-qx.git"
+    "url": "https://github.com/qooxdoo/eslint-qx-rules.git"
   },
   "author": {
     "name": "Qooxdoo Developers",
@@ -19,7 +14,7 @@
     "url": "http://www.qooxdoo.org/"
   },
   "engines": {
-    "node": ">=4.5"
+    "node": ">=10.0"
   },
   "scripts": {
     "test": "ava"
@@ -36,7 +31,7 @@
   ],
   "dependencies": {
     "eslint": "^3.19.0",
-    "eslint-plugin-qx-rules": "^0.1.0"
+    "@qooxdoo/eslint-qx-plugins": "^1.0.0"
   },
   "devDependencies": {
     "ava": "*",

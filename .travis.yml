@@ -12,5 +12,5 @@ jobs:
   include:
     - stage: deploy
       name: deploy
-      script: .travis/deploy
+      script: .travis/deploy_npm
   
