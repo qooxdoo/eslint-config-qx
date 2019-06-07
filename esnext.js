@@ -32,15 +32,15 @@ module.exports = {
 		'object-shorthand': 'off',
 		'arrow-parens': 'off',
 
-		'babel/generator-star-spacing': ['error', 'both'],
+		'generator-star-spacing': ['error', 'both'],
 		'babel/new-cap': ['error', {
 			newIsCap: true,
 			capIsNew: true
 		}],
-		'babel/array-bracket-spacing': ['error', 'never'],
-		'babel/object-curly-spacing': ['error', 'never'],
-		'babel/object-shorthand': ['error', 'always'],
-		'babel/arrow-parens': ['error', 'as-needed'],
-		'babel/no-await-in-loop': 'error'
+		'array-bracket-spacing': ['error', 'never'],
+		'object-curly-spacing': ['error', 'never'],
+		'object-shorthand': ['error', 'always'],
+		'arrow-parens': ['error', 'as-needed'],
+		'no-await-in-loop': 'error'
 	}
 };
