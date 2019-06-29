@@ -17,9 +17,12 @@ module.exports = {
         sourceType: "module"
     },
     plugins: [
-        "@qooxdoo/qx"
+        "jsdoc",
+		"@qooxdoo/qx"
     ],
     rules: {
+		
+		
         // Special qooxdoo stuff
         // to slow
         "@qooxdoo/qx/no-illegal-private-usage": "off",
