@@ -30,12 +30,12 @@
     "qooxdoo"
   ],
   "dependencies": {
-    "@qooxdoo/eslint-plugin-qx": "^1.2.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-jsdoc": "^7.2.3"
+    "@qooxdoo/eslint-plugin-qx": "^1.2.2",
+    "eslint": "^6.1.0",
+    "eslint-plugin-jsdoc": "^15.8.0"
   },
   "devDependencies": {
-    "ava": "^2.1.0",
+    "ava": "^2.2.0",
     "babel-eslint": "^10.0.2",
     "eslint-plugin-babel": "^5.3.0",
     "is-plain-obj": "^2.0.0",
