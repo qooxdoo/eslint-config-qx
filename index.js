@@ -20,6 +20,7 @@ module.exports = {
         "jsdoc",
 		"@qooxdoo/qx"
     ],
+	extends: ["plugin:jsdoc/recommended"],
     rules: {
 		
 		
