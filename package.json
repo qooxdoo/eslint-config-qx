@@ -32,6 +32,7 @@
   "dependencies": {
     "@qooxdoo/eslint-plugin-qx": "^1.2.2",
     "eslint": "^6.1.0",
+    "eslint-plugin-disable": "^1.0.5",
     "eslint-plugin-jsdoc": "^15.8.0"
   },
   "devDependencies": {
