@@ -3,10 +3,10 @@
   "version": "1.2.5",
   "description": "ESLint shareable config for Qooxdoo",
   "license": "MIT",
-  "homepage": "https://github.com/qooxdoo/eslint-qx-rules",
+  "homepage": "https://github.com/qooxdoo/eslint-config-qx",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qooxdoo/eslint-qx-rules.git"
+    "url": "https://github.com/qooxdoo/eslint-config-qx.git"
   },
   "author": {
     "name": "Qooxdoo Developers",
