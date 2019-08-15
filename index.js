@@ -392,7 +392,7 @@ module.exports = {
         "wrap-regex": "off",
 
         "yield-star-spacing": ["error", "both"],
-        "yoda": "error"
+        "yoda": "error",
 		
 		"jsdoc/check-tag-names": "off"
     }
