@@ -24,7 +24,6 @@ module.exports = {
 	extends: ["plugin:jsdoc/recommended"],
     rules: {
 		
-		
         // Special qooxdoo stuff
         // to slow
         "@qooxdoo/qx/no-illegal-private-usage": "off",
@@ -394,5 +393,7 @@ module.exports = {
 
         "yield-star-spacing": ["error", "both"],
         "yoda": "error"
+		
+		"jsdoc/check-tag-names": "off"
     }
 };
