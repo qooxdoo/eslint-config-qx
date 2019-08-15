@@ -18,7 +18,6 @@ module.exports = {
     },
     plugins: [
         "jsdoc",
-	    "disable",
 		"@qooxdoo/qx"
     ],
 	extends: ["plugin:jsdoc/recommended"],
