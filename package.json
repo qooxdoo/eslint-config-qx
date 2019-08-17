@@ -14,7 +14,7 @@
     "url": "http://www.qooxdoo.org/"
   },
   "engines": {
-    "node": ">=10.0"
+    "node": ">=8.0"
   },
   "scripts": {
     "test": "ava"
@@ -30,9 +30,9 @@
     "qooxdoo"
   ],
   "dependencies": {
-    "@qooxdoo/eslint-plugin-qx": "^1.2.2",
+    "@qooxdoo/eslint-plugin-qx": "^1.2.4",
     "eslint": "^6.1.0",
-    "eslint-plugin-jsdoc": "^15.8.0"
+    "eslint-plugin-jsdoc": "^15.8.1"
   },
   "devDependencies": {
     "ava": "^2.2.0",
