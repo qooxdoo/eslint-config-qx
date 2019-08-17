@@ -382,15 +382,14 @@ module.exports = {
 
 		// JSDoc rules
 		"jsdoc/check-tag-names": "off", // for this to work, the preferred tags have to be configured
-		"jsdoc/check-param-names": "error",
+		"jsdoc/check-param-names": "warning",
 		"jsdoc/check-types": "off", // for example, "Boolean -> boolean"
-		"jsdoc/require-jsdoc": "error",
-		"jsdoc/require-param": "error",
+		"jsdoc/require-jsdoc": "warning",
+		"jsdoc/require-param": "warning",
 		"jsdoc/require-param-description": "off",
-		"jsdoc/require-param-name": "error",
+		"jsdoc/require-param-name": "warning",
 		"jsdoc/require-param-type": "off",
-		"jsdoc/require-returns-type": "error",
-		"jsdoc/valid-types": "error"
-
+		"jsdoc/require-returns-type": "warning",
+		"jsdoc/valid-types": "warning"
 	}
 };
