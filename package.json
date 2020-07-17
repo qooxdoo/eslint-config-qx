@@ -1,6 +1,6 @@
 {
   "name": "@qooxdoo/eslint-config-qx",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "description": "ESLint shareable config for Qooxdoo",
   "license": "MIT",
   "homepage": "https://github.com/qooxdoo/eslint-config-qx",
