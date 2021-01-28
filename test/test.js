@@ -1,7 +1,7 @@
-import test from 'ava';
-import isPlainObj from 'is-plain-obj';
-import eslint from 'eslint';
-import tempWrite from 'temp-write';
+const test = require('ava');
+const isPlainObj = require('is-plain-obj');
+const eslint = require('eslint');
+const tempWrite = require('temp-write');
 
 function runEslint(str, conf) {
 	const linter = new eslint.CLIEngine({
@@ -20,26 +20,6 @@ test('main', t => {
 
 	const errors = runEslint('\"use strict\";\nconsole.log(\'unicorn\')\n', conf);
 	t.is(errors[0].ruleId, 'quotes');
-});
-
-test('esnext', t => {
-	const conf = require('../esnext');
-
-	t.true(isPlainObj(conf));
-	t.true(isPlainObj(conf.rules));
-
-	const errors = runEslint('var foo = true;\n', conf);
-	t.is(errors[0].ruleId, 'no-var');
-});
-
-test('esnext es2016', t => {
-	const conf = require('../esnext');
-
-	t.true(isPlainObj(conf));
-	t.true(isPlainObj(conf.rules));
-
-	const errors = runEslint('let unused; const x = async () => {\n\tawait Promise.resolve({b: 1, ...x});\n};\n', conf);
-	t.is(errors[0].ruleId, 'no-unused-vars');
 });
 
 test('browser', t => {
