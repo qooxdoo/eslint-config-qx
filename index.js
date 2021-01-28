@@ -18,7 +18,7 @@ module.exports = {
 	},
 	plugins: [
 		"@qooxdoo/qx",
-		"jsdoc"
+    "jsdoc"
 	],
 	rules: {
 
@@ -256,7 +256,7 @@ module.exports = {
 		"no-floating-decimal": "error",
 		"no-func-assign": "error",
 		"no-global-assign": "error",
-		"no-implicit-coercion": "error",
+		"no-implicit-coercion": "off",
 		"no-implicit-globals": "error",
 		"no-implied-eval": "error",
 		"no-inline-comments": "off", // disabled because qooxdoo allows this in listener
