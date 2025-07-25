@@ -1,26 +1,39 @@
 "use strict";
 
-module.exports = {
-	env: {
-		es6: true,
-		node: true
-	},
-	globals: {
-		"q": false,
-		"qx": false,
-		"qxWeb": false
-	},
-	parserOptions: {
-		ecmaFeatures: {
-			jsx: true
+const qxPlugin = require("@qooxdoo/eslint-plugin-qx");
+const jsdocPlugin = require("eslint-plugin-jsdoc");
+
+module.exports = [
+	{
+		languageOptions: {
+			ecmaVersion: "latest",
+			sourceType: "module",
+			parserOptions: {
+				ecmaFeatures: {
+					jsx: true
+				}
+			},
+			globals: {
+				q: "readonly",
+				qx: "readonly",
+				qxWeb: "readonly",
+				// Node.js globals
+				global: "readonly",
+				process: "readonly",
+				Buffer: "readonly",
+				__dirname: "readonly",
+				__filename: "readonly",
+				exports: "writable",
+				module: "writable",
+				require: "readonly",
+				console: "readonly"
+			}
 		},
-		sourceType: "module"
-	},
-	plugins: [
-		"@qooxdoo/qx",
-    "jsdoc"
-	],
-	rules: {
+		plugins: {
+			"@qooxdoo/qx": qxPlugin,
+			"jsdoc": jsdocPlugin
+		},
+		rules: {
 
 		// Special qooxdoo stuff
 		// to slow
@@ -391,5 +404,6 @@ module.exports = {
 		"jsdoc/require-param-type": "off",
 		"jsdoc/require-returns-type": "warn",
 		"jsdoc/valid-types": "warn"
+		}
 	}
-};
+];

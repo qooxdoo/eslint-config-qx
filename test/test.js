@@ -1,32 +1,31 @@
 const test = require('ava');
-const isPlainObj = require('is-plain-obj');
-const eslint = require('eslint');
-const tempWrite = require('temp-write');
+const { ESLint } = require('eslint');
 
-function runEslint(str, conf) {
-	const linter = new eslint.CLIEngine({
-		useEslintrc: false,
-		configFile: tempWrite.sync(JSON.stringify(conf))
+async function runEslint(str, conf) {
+	const linter = new ESLint({
+		overrideConfigFile: true,
+		overrideConfig: conf
 	});
 
-	return linter.executeOnText(str).results[0].messages;
+	const results = await linter.lintText(str, { filePath: 'test.js' });
+	return results[0].messages;
 }
 
-test('main', t => {
+test('main', async t => {
 	const conf = require('../');
 
-	t.true(isPlainObj(conf));
-	t.true(isPlainObj(conf.rules));
+	t.true(Array.isArray(conf));
+	t.true(typeof conf[0].rules === 'object');
 
-	const errors = runEslint('\"use strict\";\nconsole.log(\'unicorn\')\n', conf);
+	const errors = await runEslint('\"use strict\";\nconsole.log(\'unicorn\')\n', conf);
 	t.is(errors[0].ruleId, 'quotes');
 });
 
-test('browser', t => {
+test('browser', async t => {
 	const conf = require('../browser');
 
-	t.true(isPlainObj(conf));
+	t.true(Array.isArray(conf));
 
-	const errors = runEslint('\"use strict\";\nprocess.exit();\n', conf);
+	const errors = await runEslint('\"use strict\";\nprocess.exit();\n', conf);
 	t.is(errors[0].ruleId, 'no-undef');
 });
